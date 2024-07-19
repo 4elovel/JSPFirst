@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  version="4.0"
+  xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+
+  <servlet>
+    <servlet-class>org.example.Controller.QuoteController</servlet-class>
+    <servlet-name>QuoteController</servlet-name>
+  </servlet>
+  <servlet>
+    <servlet-class>org.example.Controller.TimeController</servlet-class>
+    <servlet-name>TimeController</servlet-name>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>QuoteController</servlet-name>
+    <url-pattern>/quotes</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TimeController</servlet-name>
+    <url-pattern>/currentTime</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
